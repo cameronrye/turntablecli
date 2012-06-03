@@ -22,6 +22,8 @@ When dealing with commands that require usernames as arguments, please be aware 
 
 TurntableCli will track the last 100 entries you made into the chat box. You can navigate these entires similar to a nix-based shell by pressing the up and down arrows while the chat input field has focus.
 
+Pressing escape will clear the input provided the suggest popup is not active.
+
 ## Moderator Commands
 
 ### /boot \<users...\> /\<reason\>

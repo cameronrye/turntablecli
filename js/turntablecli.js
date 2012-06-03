@@ -126,16 +126,6 @@
       }
     };
 
-    TurntableProxy.prototype.sendPrivateMessage = function(userid, message) {
-      message = {
-        api: "pm.send",
-        receiverid: userid,
-        text: message
-      };
-      this.sendSocketMessage(message);
-      return console.log("Sending private message to " + this.room.users[userid].name);
-    };
-
     TurntableProxy.prototype.awesomeSong = function() {
       return this.roomManager.callback("upvote");
     };
@@ -253,6 +243,11 @@
           case 40:
             if (!suggestedCommand && !this.turntableProxy.room.suggestedName) {
               this.textHistoryPrev();
+            }
+            break;
+          case 27:
+            if (!suggestedCommand && !this.turntableProxy.room.suggestedName) {
+              this.clear();
             }
         }
       }
@@ -398,7 +393,7 @@
                     this.turntableProxy.appendActionMessage("Position " + position + " is invalid.", "RemoveDJ: ");
                     continue;
                   } else {
-                    this.turntableProxy.removeDj($('.avatar_laptop:eq(' + (position - 1) + ')').attr("data-userid"));
+                    this.turntableProxy.removeDj(this.turntableProxy.room.djIds[position - 1]);
                   }
                 }
               } else {

@@ -76,15 +76,6 @@ class TurntableProxy
 		else
 			@appendActionMessage "#{@room.users[userid].name} is not a DJ.", "RemoveDJ: "
 
-	sendPrivateMessage: (userid, message) ->
-		message =
-			api: "pm.send"
-			receiverid: userid
-			text: message
-
-		@sendSocketMessage message
-		console.log "Sending private message to #{@room.users[userid].name}"
-
 	awesomeSong: ->
 		@roomManager.callback "upvote"
 
@@ -183,6 +174,9 @@ class TurntableCli
 				when 40
 					if not suggestedCommand and not @turntableProxy.room.suggestedName
 						@textHistoryPrev()
+				when 27
+					if not suggestedCommand and not @turntableProxy.room.suggestedName
+						@clear()
 
 		return @turntableProxy.room.chatKeyDownListener event
 
@@ -308,7 +302,7 @@ class TurntableCli
 									continue
 								else
 									# Get User ID by positions
-									@turntableProxy.removeDj ($('.avatar_laptop:eq(' + (position - 1) + ')').attr "data-userid")
+									@turntableProxy.removeDj @turntableProxy.room.djIds[position - 1]
 						else
 							# parse names
 							names = text.split ' @'
