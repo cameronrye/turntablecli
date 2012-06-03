@@ -1,0 +1,31 @@
+{
+	"name": "TurntableCli",
+	"version": "1.0",
+	"description": "A Turntable.fm extension that enhances the chat iput and provides convenient cli commands.",
+	"update_url": "http://extensions.10ninetysix.com/turntablecli/update.xml",
+	"permissions": ["tabs"],
+	"content_scripts": [
+		{
+			"matches": ["*://turntable.fm/*"],
+			"exclude_matches": [
+				"*://blog.turntable/*",
+				"*://faq.turntable/*"
+			],
+			"exclude_globs": [
+				"*/lobby",
+				"*/about",
+				"*/jobs",
+				"*/terms",
+				"*/privacy",
+				"*/copyright",
+				"*/static",
+				"*/down",
+				"*/getfile",
+				"*/settings",
+				"*/"
+			],
+			"js": ["js/jquery-1.7.2.min.js", "js/inject.js"]
+		}
+	],
+	"run_at": "document_idle"
+}
