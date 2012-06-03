@@ -3,10 +3,10 @@
 A simple chrome extension that enhances the convenience and usability of the chat text input box in the Turntable.FM UI. Works with any Turntable.FM extension or add-on that does not modify event handlers keyup, keydown and submit for the chat form and its components.
 
 ## Features
-	- Interact with the UI functions directly from the chat input box.
-	- Live command auto-suggest
-	- Moderator actions are much more quick and efficient without having to deal with the popup windows.
-	- 100 line input history. Simply press your up and down arrows to access previous entries. 
++	Interact with the UI functions directly from the chat input box.
++	Live command auto-suggest
++	Moderator actions are much more quick and efficient without having to deal with the popup windows.
++	100 line input history. Simply press your up and down arrows to access previous entries. 
 
 ## Installation
 
