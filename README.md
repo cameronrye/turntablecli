@@ -18,6 +18,10 @@ Simply download and install the .crx file to your Google Chrom installation. You
 
 When dealing with commands that require usernames as arguments, please be aware that double '@'s are required to specify users whose names start with '@.' This is to prevent from executing actions on the wrong listener in the event two people have the same name -- one with the '@' and one without.
 
+## Input History
+
+TurntableCli will track the last 100 entries you made into the chat box. You can navigate these entires similar to a nix-based shell by pressing the up and down arrows while the chat input field has focus.
+
 ## Moderator Commands
 
 ### /boot \<users...\> /\<reason\>
