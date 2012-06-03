@@ -1,8 +1,9 @@
 {
 	"name": "TurntableCli",
 	"version": "1.0",
-	"description": "A Turntable.fm extension that enhances the chat iput and provides convenient cli commands.",
+	"description": "A Turntable.fm extension that enhances the chat input and provides convenient CLI commands.",
 	"update_url": "http://extensions.10ninetysix.com/turntablecli/update.xml",
+	"homepage_url": "https://github.com/hink/turntablecli",
 	"permissions": ["tabs"],
 	"content_scripts": [
 		{
