@@ -10,7 +10,7 @@ A simple chrome extension that enhances the convenience and usability of the cha
 
 ## Installation
 
-Simply download and install the .crx file to your Google Chrom installation. You'll be aware that the extension worked properly by seeing 'Enter a message or command' as the text input placeholder.
+Simply download and install the .crx file to your Google Chrome installation. You'll be aware that the extension worked properly by seeing 'Enter a message or command' as the text input placeholder.
 
 # Documentation
 
