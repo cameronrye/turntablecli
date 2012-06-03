@@ -10,7 +10,7 @@ A simple chrome extension that enhances the convenience and usability of the cha
 
 ## Installation
 
-Simply download and install the .crx file to your Google Chrom installation.
+Simply download and install the .crx file to your Google Chrom installation. You'll be aware that the extension worked properly by seeing 'Enter a message or command' as the text input placeholder.
 
 # Documentation
 
@@ -20,7 +20,7 @@ When dealing with commands that require usernames as arguments, please be aware 
 
 ## Moderator Commands
 
-### /boot <users...> /<reason>
+### /boot \<users...\> /\<reason\>
 
 Will promptly boot specified users without prompting for confirmation or reason.
 
@@ -34,7 +34,7 @@ Boots user1 and @user2 without a specified reason
 
 Boots user1 and @user2 with a specified reason of 'Stop spamming.'
 
-### /removedj <positions> AND /removedj <names>
+### /removedj \<positions\> AND /removedj \<names\>
 
 Will promptly remove DJs specified by name or specified by DJ position. Note that you can only use names or positions exclusively during a single use of the command.
 
@@ -66,7 +66,7 @@ Lames the current song
 
 Toggles sound muting.
 
-### /pm <users>
+### /pm \<users\>
 
 Starts a PM conversation with the specified users
 
