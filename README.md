@@ -10,6 +10,9 @@ A simple chrome extension that enhances the convenience and usability of the cha
 
 ## Change Log
 
+### v1.1.1
+- Fixed /skip bug
+
 ### v1.1
 -	Added '/skip' and '/quitdj' commands for DJs.
 - Added ctrl-c functionality to chat input.
