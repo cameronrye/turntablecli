@@ -159,7 +159,7 @@ class TurntableCli
 		$(textInput).attr "placeholder", "Enter a message or command"
 
 		# Inject Boilerplate Info
-		$('#footer').html "#{$('#footer').html()} • "
+		$('#footer').html "#{$('#footer').html()} &middot; "
 		$("<a id='turntablecli_link' target='_blank' href='http://github.com/hink/turntablecli'>TurntableCLI v#{version}</a>").appendTo('#footer')
 
 		# Display Init Message
