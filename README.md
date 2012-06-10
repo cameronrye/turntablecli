@@ -8,6 +8,15 @@ A simple chrome extension that enhances the convenience and usability of the cha
 +	Moderator actions are much more quick and efficient without having to deal with the popup windows.
 +	100 line input history. Simply press your up and down arrows to access previous entries. 
 
+## Change Log
+
+### v1.1
+-	Added '/skip' and '/quitdj' commands for DJs.
+- Added ctrl-c functionality to chat input.
+- Changed PM functionality to work if new message window was in overflow.
+- Fixed chat input history bug where history index wasn't being properly tracked.
+-	Code cleanup and various bug fixes.
+
 ## Installation
 
 Simply download and install the .crx file to your Google Chrome installation. You'll be aware that the extension worked properly by seeing 'Enter a message or command' as the text input placeholder.
@@ -22,7 +31,7 @@ When dealing with commands that require usernames as arguments, please be aware 
 
 TurntableCli will track the last 100 entries you made into the chat box. You can navigate these entires similar to a nix-based shell by pressing the up and down arrows while the chat input field has focus.
 
-Pressing escape will clear the input provided the suggest popup is not active.
+Pressing escape will clear the input provided the suggest popup is not active. Ctrl-c will do the same, however any text in the input box will be added to the input history.
 
 ## Moderator Commands
 
@@ -81,6 +90,14 @@ Starts a PM conversation with the specified users
 	/pm @user1
 
 Starts a private message conversation with user1.
+
+### /quitdj
+
+Removes you from the decks.
+
+### /skip
+
+Skips your current song.
 
 ### /snag
 
