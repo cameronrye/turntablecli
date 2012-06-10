@@ -141,12 +141,11 @@
     };
 
     TurntableProxy.prototype.skipSong = function() {
-      message - {
-        api: "room.stop_song"
-      };
-      ({
+      var message;
+      message = {
+        api: "room.stop_song",
         roomid: this.room.roomId
-      });
+      };
       if (this.room.currentDj === this.room.selfId) {
         return this.sendSocketMessage(message);
       } else {

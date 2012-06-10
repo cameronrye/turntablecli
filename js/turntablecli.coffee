@@ -88,7 +88,7 @@ class TurntableProxy
 			@appendActionMessage "You are not a DJ.", "QuitDJ: "
 
 	skipSong: ->
-		message - 
+		message = 
 			api: "room.stop_song"
 			roomid: @room.roomId
 
@@ -104,7 +104,7 @@ class TurntableProxy
 		@roomManager.callback "downvote"
 
 class TurntableCli
-	version = "1.1"
+	version = "1.1.1"
 	textInput = null
 	maxHistory = 100
 	currentHistoryIndex = 0
