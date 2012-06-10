@@ -219,7 +219,7 @@
       textInput.keyup(this.handleInputKeyUp);
       textInput.keydown(this.handleInputKeyDown);
       $(textInput).attr("placeholder", "Enter a message or command");
-      $('#footer').html("" + ($('#footer').html()) + " &middot; ");
+      $('#footer').html("" + ($('#footer').html()) + " &#8226; ");
       $("<a id='turntablecli_link' target='_blank' href='http://github.com/hink/turntablecli'>TurntableCLI v" + version + "</a>").appendTo('#footer');
       return this.turntableProxy.appendActionMessage("Version " + version, "TurntableCLI: ");
     };
